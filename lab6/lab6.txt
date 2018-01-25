@@ -1,0 +1,21 @@
+Using the template file
+
+1. Draw a simple person with line segments
+
+               
+
+               |
+               |
+              /|\ 
+             / | \
+              / \
+             /   \
+
+
+Using 2D transformations to create a moving person (moving hands and legs)
+
+2. Set up the Orthographic project mode in 3D
+Using glutWireCube and glutWireSphere to draw a cube and a sphere.
+Using gluLookAt to change the position and direction of the camera. Links 
+keyboard events with the change of position and direction of the camera
+  

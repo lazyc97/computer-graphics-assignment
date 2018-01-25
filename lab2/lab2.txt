@@ -1,0 +1,16 @@
+Using the template file
+
+1. Load data from the dinosaur.dat file. Draw the dinosaur.
+
+Compile and run the program
+
+
+2. Using Viewports to draw the Pictures in the slides "Application: Tiling with Viewports" (slide 19 - HillCh3Ed3.ppt)
+
+Compile and run the program
+
+3. Draw the graph of the functions:
+    y = x^3 + 2*x^2 + 3
+    y = 2*sin(x) + 0.5*cos(x)
+
+Using windows to clip the graph of the function

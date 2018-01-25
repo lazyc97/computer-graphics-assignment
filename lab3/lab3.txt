@@ -1,0 +1,4 @@
+Using the template file
+
+1. Draw the fifth-generation Koch Snowflake
+2. Draw the cardioid, rose, and spiral parametric curves

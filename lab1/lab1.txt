@@ -1,0 +1,11 @@
+Using the template file
+
+1. Draw three dots: Draw three dots at random position on the screen
+
+Compile and run the program
+
+
+2. Draw a simple house
+
+Compile and run the program
+

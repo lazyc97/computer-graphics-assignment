@@ -1,0 +1,13 @@
+Using the template file
+
+1. Load a 3D face of a human from a file and display the face. 
+The structure of the file is as follows:
+
+The number of vertices
+Coordinates of vertices
+The number of polygon
+indexes of vertices of polygons
+
+
+2. Implement pitch, roll and yaw of the camera. Links with keyboard events 
+  
