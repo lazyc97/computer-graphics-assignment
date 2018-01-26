@@ -37,8 +37,6 @@ void draw_polygon_from_input(ifstream &fi, bool flip) {
 void draw_dinosaur(bool flip) {
     ifstream fi("../lab2/dinosaur.dat");
     int n; fi >> n;
-    gluOrtho2D(WIN_LEFT, WIN_RIGHT, WIN_BOTTOM, WIN_TOP);
-    glColor3d(0, 0, 0);
     for (int k = 0; k < n; ++k) draw_polygon_from_input(fi, flip);
     fi.close();
 }
@@ -87,28 +85,24 @@ void myDisplay()  {
 
     // 1
     if (QUIZ == "1") {
+        gluOrtho2D(WIN_LEFT, WIN_RIGHT, WIN_BOTTOM, WIN_TOP);
+        glColor3d(0, 0, 0);
         draw_dinosaur(false);
     }
 
-    // 2A
-    if (QUIZ == "2A") {
-        for (int i = 0; i < 5; ++i)
-            for (int j = 0; j < 5; ++j) {
-                int x = i * VIEW_WIDTH;
-                int y = j * VIEW_HEIGHT;
-                glViewport(x, y, VIEW_WIDTH, VIEW_HEIGHT);
-                draw_dinosaur(false);
-            }
-    }
+    // 2
+    if (QUIZ[0] == '2') {
+        gluOrtho2D(WIN_LEFT, WIN_RIGHT, WIN_BOTTOM, WIN_TOP);
+        glColor3d(0, 0, 0);
 
-    // 2B
-    if (QUIZ == "2B") {
         for (int i = 0; i < 5; ++i)
             for (int j = 0; j < 5; ++j) {
                 int x = i * VIEW_WIDTH;
                 int y = j * VIEW_HEIGHT;
                 glViewport(x, y, VIEW_WIDTH, VIEW_HEIGHT);
-                draw_dinosaur((i - j) % 2 == 0);
+
+                bool flip = (QUIZ[1] == 'A' ? false : (i - j) % 2 == 0);
+                draw_dinosaur(flip);
             }
     }
 
