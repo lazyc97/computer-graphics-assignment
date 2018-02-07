@@ -118,7 +118,7 @@ void myDisplay()  {
 int main( int argc, char *argv[] )  {
     glutInit( &argc, argv );
     glutInitDisplayMode( GLUT_SINGLE | GLUT_RGB );
-    glutInitWindowSize( 640, 480 );
+    glutInitWindowSize( 640, 640 );
     glutCreateWindow( "Lab3" );
     myInit( );
     glutDisplayFunc( myDisplay );
